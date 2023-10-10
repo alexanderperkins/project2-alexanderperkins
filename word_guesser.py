@@ -19,6 +19,9 @@ def get_secret_word() -> str:
 	return word
 
 def get_user_guess():
+	"""
+	Returns user's guessed word. Makes user repeat until word is only 5 letters.
+	"""
 	guess = input("Guess the 5 letter word: ")
 	while len(guess) != 5:
 		print("***Error***")
@@ -26,6 +29,9 @@ def get_user_guess():
 	return guess
 
 def match_letter_position(secret_word, guess):
+	"""
+	Compares letters in user's guess word against those in random word by indexed position.
+	"""
 	index = 0
 	matches = ''
 	guess_attempt = ''
@@ -45,6 +51,9 @@ def match_letter():
 	pass
 
 def guess_attempts(secret):
+	"""
+	Allows user to make or repeat up to 6 guesses to match the random word.
+	"""
 	user_guesses = 0
 	max_guesses = 6
 	while max_guesses > user_guesses:
@@ -58,6 +67,9 @@ def guess_attempts(secret):
 	return user_guesses, attempt, match
 
 def game_result(attempts, guess, secret):
+	"""
+	Tells the user if they won or not. If they didn't win, shows the random word.
+	"""
 	if guess == secret:
 		print(f'You won! It took you {attempts} tries.')
 	else:
