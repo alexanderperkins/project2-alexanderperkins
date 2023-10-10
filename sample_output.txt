@@ -1,0 +1,72 @@
+ % python word_guesser.py
+Guess a word: heart
+You guessed heart.
+Not quite:
+		heart
+		----Y
+		heart
+Guess a word: spoil 
+You guessed spoil.
+Not quite:
+		spoil
+		--Y-Y
+		spoil
+Guess a word: funky
+You guessed funky.
+Not quite:
+		funky
+		Y---G
+		funky
+Guess a word: floty
+You guessed floty.
+Not quite:
+		floty
+		YYYGG
+		floty
+Guess a word: lofty
+You guessed lofty.
+You win!
+Would you like to play again? yes
+Guess a word: capybara 
+Your guess must be five characters long! Try again.
+Guess a word: dog
+Your guess must be five characters long! Try again.
+Guess a word: heart
+You guessed heart.
+Not quite:
+		heart
+		--Y--
+		heart
+Guess a word: funky
+You guessed funky.
+Not quite:
+		funky
+		--Y--
+		funky
+Guess a word: spoil
+You guessed spoil.
+Not quite:
+		spoil
+		--G-Y
+		spoil
+Guess a word: moose
+You guessed moose.
+Not quite:
+		moose
+		--G--
+		moose
+Guess a word: loser
+You guessed loser.
+Not quite:
+		loser
+		YY---
+		loser
+Guess a word: whaat
+You guessed whaat.
+Not quite:
+		whaat
+		--Y--
+		whaat
+Sorry, you did not guess the secret word. The word was along.
+Would you like to play again? no
+Result - Wins: 1 | Losses: 1
