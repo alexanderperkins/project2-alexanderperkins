@@ -4,12 +4,12 @@
     Name: Alex Perkins
 """
 
-import random # library required to randomly choose a secret word
+import random  # library required to randomly choose a secret word
 
 def get_secret_word() -> str:
 	"""
 	Returns a randomly generated secret word.
-	Uses the list of words in the public domain retreived from:
+	Uses the list of words in the public domain retrieved from:
 	https://www-cs-faculty.stanford.edu/~knuth/sgb.html
 	Requires a text file called words.txt.	
 	"""
@@ -69,11 +69,12 @@ def game_wins_losses():
 def main():
 	random_word = get_secret_word()
 	print(random_word)
-	#guessed_word = get_user_guess()
-	#print(guessed_word)
-	#guess_result, matched_letters = match_letter_position(random_word, guessed_word)
+	# guessed_word = get_user_guess()
+	# print(guessed_word)
+	# guess_result, matched_letters = match_letter_position(random_word, guessed_word)
 	guesses, guess_result, match_letters = guess_attempts(random_word)
 	game_result(guesses, guess_result, random_word)
 
+
 if __name__ == '__main__':
-    main()
+	main()
