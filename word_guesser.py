@@ -64,6 +64,7 @@ def guess_attempts(secret):
 			print(attempt)
 			print(match)
 			break
+		print(f'Nice try! You have {max_guesses - user_guesses} guesses left.')
 	return user_guesses, attempt, match
 
 def game_result(attempts, guess, secret):
@@ -73,7 +74,7 @@ def game_result(attempts, guess, secret):
 	if guess == secret:
 		print(f'You won! It took you {attempts} tries.')
 	else:
-		print("Nice try! You didn't win. Secret word was: ", secret)
+		print("You lose. Better luck next time! Secret word was: ", secret)
 
 def game_wins_losses():
 	pass
